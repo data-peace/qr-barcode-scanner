@@ -59,7 +59,7 @@ function BarcodeScanner({
       className="BarcodeScanner"
       videoConstraints={{
         facingMode: "environment",
-        width: { max: 600 },
+        width: { max: 1000 },
         height: { max: 600 },
       }}
       audio={false}
