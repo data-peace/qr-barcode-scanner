@@ -62,7 +62,7 @@ button:disabled {
   background-color: #333;
   width: 100%;
   object-fit: contain;
-  height: 25%;
+  height: 45%;
 }
 
 .BarcodesList {

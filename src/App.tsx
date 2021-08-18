@@ -2,7 +2,7 @@ import { useCallback, useEffect, useState } from "react";
 import Webcam from "react-webcam";
 import { scanImageData } from "zbar.wasm";
 
-const DELAY_MS = 500;
+const DELAY_MS = 250;
 
 const canvas = document.createElement("canvas");
 const ctx = canvas.getContext("2d")!;
@@ -60,7 +60,8 @@ function BarcodeScanner({
       videoConstraints={{
         facingMode: "environment",
         width: { max: 1000 },
-        height: { max: 600 },
+        height: { max: 1000 },
+        aspectRatio: { ideal: 1 },
       }}
       audio={false}
     />
